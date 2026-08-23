@@ -14,6 +14,12 @@ def csvtool_clicked():
 def scraper_clicked():
     print("Scraper Clicked")
     subprocess.run(["python", "C:/Users/danye/PycharmProjects/24R07PythonExpert/lesson6/parse_welcome_page.py"], cwd="C:/Users/danye/PycharmProjects/24R07PythonExpert/lesson6")
+def collatz_clicked():
+    print("Collatz Clicked")
+    subprocess.run(["python", "C:/Users/danye/PycharmProjects/masterapp/collatz.py"])
+def snake_clicked():
+    print("Snake Clicked")
+    subprocess.run(["python", "C:/Users/danye/PycharmProjects/Snake/main.py"], cwd="C:/Users/danye/PycharmProjects/Snake")
 dodgeForever = tk.Button(root, text="Dodge Forever", command=dodge_clicked)
 dodgeForever.pack()
 
@@ -23,5 +29,10 @@ csvTool.pack()
 scraper = tk.Button(root, text="Web Scraper", command=scraper_clicked)
 scraper.pack()
 
+collatz = tk.Button(root, text="Collatz Conjecture Calculator", command=collatz_clicked)
+collatz.pack()
+
+snake = tk.Button(root, text="Snake", command=snake_clicked)
+snake.pack()
 
 root.mainloop()
